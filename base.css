@@ -1,8 +1,10 @@
 ::-moz-selection {
-    background: yellow;
+    background: black;
+    color:white;
   }
   ::selection {
-    background: yellow;
+    background: black;
+    color:white;
   }
   *,
   *:before,
@@ -22,8 +24,7 @@
     color: rgba(0, 0, 0, 0.87);
   }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   h1,
   h2,
@@ -519,13 +520,20 @@
     flex: 1 0 auto;
     max-width: 15rem;
     width: 100%;
+    border-radius: 50%;
   }
   @media only screen and (max-width: 1199px) {
     .avatar-wrapper {
       padding: 0;
     }
   }
-  
+
+  /* Rocket */
+  .rocket {
+    padding: 20px;
+    margin-top: 40px;
+  }
+
   /* Divider */
   .divider {
     border-top: 1px solid rgba(222, 222, 222, 1);
@@ -997,7 +1005,7 @@
   main {
     overflow: auto;
     z-index: 2;
-    background: white;
+    background: transparent;
     position: relative;
   }
   main:nth-last-child(3) {
@@ -1054,3 +1062,9 @@
       margin-bottom: 0;
     }
   }
+
+#particles {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
